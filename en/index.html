@@ -1,0 +1,915 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<meta name="description" content="Bed and Breakfast, Home, Nature, Farm, Ceramics, Textile">
+	<meta name="keywords" content="HTML, CSS, JavaScript">
+	<meta name="author" content="Le Petit Mazilloux">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+		integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+	<link rel="stylesheet" type="text/css" href="../css/style.css">
+	<link href='https://fonts.googleapis.com/css?family=Merienda' rel='stylesheet'>
+	<link href="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.css" rel="stylesheet">
+
+	<title>The Petit Mazilloux</title>
+	<link rel="icon" href="../images/LPM_tab-logo.png" width="800" alt="Logo du Petit Mazilloux">
+</head>
+
+<body data-spy="scroll" data-target=".navbar" data-offset="50">
+	<div id="Welcome">
+		<!---Start navigation Bar -->
+		<nav class="navbar navbar-expand-lg navbar fixed-top navbar-light bg-light">
+			<a class="navbar-brand" href="#Welcome">
+				<img src="../images/LPM_logo_Eng.png" class="lpm_navbar_logo img-fluid" alt="Logo du petit mazilloux">
+			<img src="../images/LPM_tab-logo.png" class="lpm_sm_navbar_logo img-fluid" alt="Logo du petit mazilloux">
+			</a>
+			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText"
+				aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+			<div class="collapse navbar-collapse" id="navbarText">
+				<ul class="navbar-nav ml-auto">
+					<li class="nav-item">
+						<a class="nav-link" href="#welcome">Presentation</a>
+					</li>
+					<li class="nav-item dropdown">
+						<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+							data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+							Accommodation
+						</a>
+						<div class="dropdown-menu" aria-labelledby="navbarDropdown">
+							<a class="dropdown-item" href="#rooms">The Rooms</a>
+							<a class="dropdown-item" href="#cottage">The Cottage</a>
+						</div>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#the-hosts-table">The Host's Table</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#appartements">The appartements</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#region">Region</a>
+					</li>
+					<li class="nav-item dropdown">
+						<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+							data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+							Courses
+						</a>
+						<div class="dropdown-menu" aria-labelledby="navbarDropdown">
+							<a class="dropdown-item" href="#ceramic_course">Ceramic courses</a>
+							<a class="dropdown-item" href="#textile_course">Textile courses</a>
+						</div>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#contact">Contact</a>
+					</li>
+					<li class="nav-item">
+						<a href="../index.html" class="language" rel="en-En"><img
+								src="https://img.icons8.com/emoji/48/000000/france-emoji.png" alt="French Flag"
+								title="version Française du site" /></a>
+					</li>
+				</ul>
+			</div>
+		</nav>
+		<!--- End Navigation Bar -->
+
+		<div class="container col-12">
+			<div class="row">
+				<div class="col navMenu">
+					<h1 class="text-center welcome-header">Welcome to Le Petit Mazilloux, bed and breakfast</h1>
+					<img class="img-fluid col-lg-8 offset-lg-2 col-md-12 col-sm-12 col-xl-8 offset-xl-2 img-shadow"
+						src="../images/vuedelachambreparental.jpg" alt="Vue from the Master Bedroom">
+				</div>
+			</div>
+
+			<!---Présentation-->
+			<div class="container col-10">
+				<div class="row" id="welcome">
+					<div class="col navMenu">
+						<h2 class="text-center">Presentation</h2>
+					</div>
+				</div>
+				<div class="row bg-light">
+					<div class="col-xl-5 col-lg-12 col-md-12 col-sm-12">
+						<h3 style="text-align: center;">A farm with character</h3>
+						<p style="text-align: justify;">Nestled within the Velay mountains at 1133M of altitude, this
+							17th century build is a quintessential
+							Auvergnat farm house made of natural volcanic rock. Situated between the Ardèche, the Mézenc
+							and the
+							Estables , Le Petit Mazilloux is in the midst of plush forests and ancient volcanos. We
+							welcome you all
+							year round to join our safe haven and enjoy the awe inducing beauty of the Haute Loire's
+							landscape. We
+							offer two bedrooms with ensuites and a Cottage, all delicately decorated; incorporating
+							comfort and a
+							vintage style. Experience an enchanting stay next to nature where you'll be surrounded by
+							wild life as
+							well as horses, chickens and our little Westie.</p>
+					</div>
+					<div class="col-xl-7 col-lg-12 col-md-12 col-sm-12" data-aos="fade-up">
+						<img class="img-fluid" src="../images/front.jpeg" alt="Photo of the house">
+					</div>
+				</div>
+				<div class="row bg-light"><br></div>
+				<div class="row bg-light">
+					<div class="col-xl-7 col-lg-12 col-md-12 col-sm-12 order-2" data-aos="fade-up">
+						<img class="img-fluid " src="../images/sunset-3.jpeg" alt="Photo of a sunset at Mazilloux">
+					</div>
+					<div class="col-xl-5 order-xl-2 col-lg-12 col-md-12 col-sm-12 order-1">
+						<h3 style="text-align: center;">A unique experience</h3>
+						<p style="text-align: justify;">Kick back and relax! Le Petit Mazilloux's unique location
+							invites you to disconnect from the outside world
+							and feel at one with nature. It immerses you in a cozy familial atmosphere, a place invested
+							into making
+							you feel at home and comfortable. A home characterized by harmony and authenticity. Every
+							piece of
+							furniture was renovated with care and fits perfectly in its environment. Between the visible
+							stones, the
+							mural fresques, preserved wild life and antiques is an elegant equilibrium ochestrated by
+							the owners
+							who are experienced in the renovations of old buildings. Here you will experience
+							contrasting
+							atmospheres interweaving into each other, a style reminding one of patchwork.</p>
+					</div>
+				</div>
+			</div>
+			<!--- End of Presentation -->
+
+			<!--- Start of Rooms -->
+			<div class="container col-10">
+				<div class="row" id="rooms">
+					<div class="col navMenu">
+						<h2 class="text-center">Accommodation</h2>
+					</div>
+					<p style="text-align: center;margin-bottom: 4%;" class="col-12">This family runs Bed and Breakfast
+						provides two bedrooms with splendid views.<br /><br />
+
+						The rooms, in their timeless pastoral design, exude warmth and are reminiscent of an antique
+						shop.<br /><br />
+
+						We have used natural and eco-friendly materials such as stones, wood and casien based lime
+						paints.<br /><br />
+
+						Every piece of furniture was restaured with care to preserve its original aspect. <br /><br />
+
+						This Bed and Breakfast is conscientious of the environment and believes in using natural
+						products such as coton linen for beds and biological cleaning products. </p>
+				</div>
+
+				<div class="row bg-light room-terrecuite">
+					<div class="col-xl-6 order-xl-2 col-lg-12 col-md-12 col-sm-12 order-1">
+						<h3 class="text-center">The Terracotta Room</h3>
+						<p class="terrecuite-description">Travel to Antiquity in the “Terre cuite” room. Its colours,
+							evocative of the red clay typically used during the Roman Empire welcomes you to a cozy
+							atmosphere.</p>
+						<p class="terrecuite-description-details">This bedroom can host 2 people.</p>
+						<ul class="room-list">
+							<li>1 double bed</li>
+							<li class="list_sm_padding-top">View of the Mont Mezenc</li>
+							<li class="list_sm_padding-top">Private Suite</li>
+							<li class="list_md_padding-top">Breakfast included</li>
+							<li class="list_md_padding-top">Free Wifi</li>
+							<li class="list_md_padding-top">Evening meal optional</li>
+							<li class="list_sm_padding-top">Travel cot optional</li>
+							<li class="list_md_padding-top"><strong>80£</strong> per night</li>
+						</ul>
+					</div>
+
+					<div class="col-xl-6 order-xl-2 col-lg-12 col-md-12 col-sm-12 order-1" style="padding-top:2%;">
+						<div id="carouselExampleFade" class="carousel slide carousel-fade" data-ride="carousel">
+							<div class="carousel-inner">
+								<div class="carousel-item active">
+									<img class="d-block w-100" src="../images/Chambre-TerreCuite-1.jpg"
+										alt="First slide">
+								</div>
+								<div class="carousel-item">
+									<img class="d-block w-100" src="../images/Chambre-TerreCuite-2.jpg"
+										alt="Second slide">
+								</div>
+								<div class="carousel-item">
+									<img class="d-block w-100" src="../images/Chambre-TerreCuite-3.jpg"
+										alt="Third slide">
+								</div>
+							</div>
+							<a class="carousel-control-prev" href="#carouselExampleFade" role="button"
+								data-slide="prev">
+								<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+								<span class="sr-only">Previous</span>
+							</a>
+							<a class="carousel-control-next" href="#carouselExampleFade" role="button"
+								data-slide="next">
+								<span class="carousel-control-next-icon" aria-hidden="true"></span>
+								<span class="sr-only">Next</span>
+							</a>
+						</div>
+
+						<div style="width:100%;margin:auto;text-align: center;">
+							<a href="https://www.booking.com/hotel/fr/la-chambre-d-39-hote-du-petit-mazilloux.en-gb.html?aid=397594&label=gog235jc-1FCAEoggI46AdIM1gDaE2IAQGYAQm4ARfIAQzYAQHoAQH4AQyIAgGoAgO4Ao3eoPkFwAIB0gIkNzFlZmExNjctOTY0Zi00ZGRmLWE0ZTgtNTFkMTI0YTY0Yjc12AIG4AIB&sid=3375c36f25bb8fd4f05de3e4e43c016e&dest_id=-1460024&dest_type=city&group_adults=2&group_children=0&hapos=1&hpos=1&lang=en-gb&no_rooms=1&room1=A%2CA&sb_price_type=total&soz=1&sr_order=popularity&srepoch=1596469013&srpvid=7c4e6dcabe4b00c3&type=total&ucfs=1&lang_click=other;cdl=en-us;lang_changed=1#room_664231201"
+								class="btn btn-outline-secondary w-100" id="btn-lien-booking" target="_blank">Book this
+								room via Booking.com</a>
+						</div>
+					</div>
+
+				</div>
+
+				<div class="row bg-light"><br></div>
+
+				<div class="row bg-light room-porcelaine">
+					<div class="col-xl-6 order-xl-2 col-lg-12 col-md-12 col-sm-12 order-2" style="padding-top: 2%;">
+						<div id="carouselExampleFade-1" class="carousel slide carousel-fade" data-ride="carousel">
+							<div class="carousel-inner">
+								<div class="carousel-item active">
+									<img class="d-block w-100" src="../images/Chambre-Porcelaine-1.jpg"
+										alt="Porcelaine Room">
+								</div>
+								<div class="carousel-item">
+									<img class="d-block w-100" src="../images/Chambre-Porcelaine-2.jpg"
+										alt="Porcelaine Room">
+								</div>
+								<div class="carousel-item">
+									<img class="d-block w-100" src="../images/Chambre-Porcelaine-3.jpg"
+										alt="Porcelaine Room">
+								</div>
+							</div>
+							<a class="carousel-control-prev" href="#carouselExampleFade-1" role="button"
+								data-slide="prev">
+								<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+								<span class="sr-only">Previous</span>
+							</a>
+							<a class="carousel-control-next" href="#carouselExampleFade-1" role="button"
+								data-slide="next">
+								<span class="carousel-control-next-icon" aria-hidden="true"></span>
+								<span class="sr-only">Next</span>
+							</a>
+						</div>
+
+						<div style="width:100%;margin:auto;text-align: center;">
+							<a href="https://www.booking.com/hotel/fr/la-chambre-d-39-hote-du-petit-mazilloux.en-gb.html?aid=397594&label=gog235jc-1FCAEoggI46AdIM1gDaE2IAQGYAQm4ARfIAQzYAQHoAQH4AQyIAgGoAgO4Ao3eoPkFwAIB0gIkNzFlZmExNjctOTY0Zi00ZGRmLWE0ZTgtNTFkMTI0YTY0Yjc12AIG4AIB&sid=3375c36f25bb8fd4f05de3e4e43c016e&dest_id=-1460024&dest_type=city&group_adults=2&group_children=0&hapos=1&hpos=1&lang=en-gb&no_rooms=1&room1=A%2CA&sb_price_type=total&soz=1&sr_order=popularity&srepoch=1596469013&srpvid=7c4e6dcabe4b00c3&type=total&ucfs=1&lang_click=other;cdl=en-us;lang_changed=1#room_664231202"
+								class="btn btn-outline-secondary w-100" id="btn-lien-booking" target="_blank">Book this
+								room via Booking.com</a>
+						</div>
+					</div>
+
+
+					<div class="col-xl-6 order-xl-2 col-lg-12 col-md-12 col-sm-12 order-1">
+						<h3 class="text-center">The Porcelain Room</h3>
+						<p class="room-porcelaine-description">Let the serenity of the porcelain room soothe your
+							thoughts, only the dulcet tones of the birds will wake you up in the morning.</p>
+						<p class="room-porcelaine-description-details">This bedroom can host 2 people.</p>
+						<ul class="room-list">
+							<li>1 double bed</li>
+							<li class="list_sm_padding-top">View of the Mont-Bresse and our natural pond</li>
+							<li class="list_sm_padding-top">Private suite</li>
+							<li class="list_md_padding-top">Breakfast included</li>
+							<li class="list_md_padding-top">Free Wifi</li>
+							<li class="list_md_padding-top">Evening meal optional</li>
+							<li class="list_sm_padding-top">Travel cot optional</li>
+							<li class="list_md_padding-top"><strong>80£</strong> per night</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+
+			<!--- End of Rooms -->
+
+			<!--- Start of Cottage -->
+			<div class="container col-10">
+				<div class="row" id="cottage">
+					<div class="col navMenu">
+						<h2 class="text-center">Le Cottage</h2>
+					</div>
+				</div>
+				<div class="row bg-light">
+					<div class="col-xl-5 col-lg-12 col-md-12 col-sm-12">
+						<h3 class="cottage-title">A high comfort cottage</h3>
+						<p class="cottage-description">Our Bed and Breakfast also has a cottage.
+							Made in 1674, the cottage was recently renovated but keeps its original vintage feel
+							blending authenticity, charm and comfort.
+							The Cottage can host up to 8 people, with a master bedroom, a bedroom for children, a living
+							room with kitchen and a very comfortable sofa bed. The bathroom has an italian shower built
+							from tiles we made with clay from the rivers of the Haute-Loire.
+						</p>
+					</div>
+					<div class="col-xl-7 col-lg-12 col-md-12 col-sm-12" data-aos="fade-up">
+						<img class="img-fluid" src="../images/cottage-front-1.jpg"
+							alt="A photo of the Cottage taken from our garden">
+					</div>
+				</div>
+				<div class="row bg-light"><br></div>
+				<div class="row bg-light">
+					<div class="col-xl-7 col-lg-12 col-md-12 col-sm-12 order-2" data-aos="fade-up">
+						<img class="img-fluid" src="../images/vuedusalon.jpg" alt="Photo of our garden">
+					</div>
+					<div class="col-xl-5 order-xl-2 col-lg-12 col-md-12 col-sm-12 order-1">
+						<h3 class="cottage-title">An incredible view</h3>
+						<p class="cottage-description">In total immersion in the mountains of the Velay you will find
+							breathtaking panoramic views.<br />
+							When the sun hits the mountains, an orange glow fills the Cottage with a warm presence.
+						</p>
+					</div>
+				</div>
+			</div>
+
+			<div class="container col-10">
+				<!-- Le Salon -->
+				<div class="row bg-light extra-margin-first-container">
+
+					<div class="col-xl-6 order-xl-2 col-lg-12 col-md-12 col-sm-12 order-2" data-aos="fade-up">
+						<img class="img-fluid" src="../images/salon-3.jpg" alt="Le coin salon du Cottage">
+					</div>
+
+					<div class="col-xl-6 order-xl-1 col-lg-12 col-md-12 col-sm-12 order-1 ">
+						<h3 class="cottage-title">The living room</h3>
+						<p class="desc-cottage">The wooden beams along with the exposed stones and recuperated furniture
+							gives a cozy vintage style to the living room.
+						</p>
+						<ul class="cottage-list">
+							<li class="list_sm_padding-top">Large dining table with a garden view </li>
+							<li class="list_sm_padding-top">Large convertible sofa</li>
+							<li class="list_sm_padding-top">Flowery and bright space</li>
+						</ul>
+					</div>
+				</div>
+
+				<!-- Le coin cuisine -->
+				<div class="row bg-light extra-margin-container">
+
+					<div class="col-xl-6 order-xl-1 col-lg-12 col-md-12 col-sm-12 order-2" data-aos="fade-up">
+						<img class="img-fluid" src="../images/coin-cuisine.jpg" alt="Le coin cuisine du Cottage">
+					</div>
+
+					<div class="col-xl-6 order-xl-2 col-lg-12 col-md-12 col-sm-12 order-1">
+						<h3 class="cottage-title">The kitchen area</h3>
+						<p class="desc-cottage">Equipped with a vitroceramic cooktop, a porcelaine sink and all the
+							essentials for cooking your own meals.</p>
+						<ul class="cottage-list">
+							<li class="list_sm_padding-top">Marble sink </li>
+							<li class="list_sm_padding-top">Vitroceramic cooktop and fridge</li>
+							<li class="list_sm_padding-top">Kettle and coffee machine</li>
+							<li class="list_sm_padding-top">Plenty of storage</li>
+						</ul>
+					</div>
+				</div>
+
+				<!-- La Chambre Parentale -->
+				<div class="row bg-light extra-margin-first-container">
+
+					<div class="col-xl-6 order-xl-2 col-lg-12 col-md-12 col-sm-12 order-2" data-aos="fade-up">
+						<img class="img-fluid" src="../images/chambre-parentale.jpg" alt="Décoration sur céramique">
+					</div>
+
+					<div class="col-xl-6 order-xl-1 col-lg-12 col-md-12 col-sm-12 order-1">
+						<h3 class="cottage-title">The Master Bedroom</h3>
+						<p class="desc-cottage">A large master bedroom with a double bed, a library, a wardrobe, a sofa
+							and a beautiful view.</p>
+						<ul class="cottage-list">
+							<li class="list_sm_padding-top">King size bed with a new matress</li>
+							<li class="list_sm_padding-top">Very bright room</li>
+							<li class="list_sm_padding-top">Dresser, bookcase and armchair for your comfort</li>
+							<li class="list_sm_padding-top">Sunsets not to be missed</li>
+						</ul>
+					</div>
+				</div>
+
+				<!-- Tour de poterie -->
+				<div class="row bg-light extra-margin-container">
+
+					<div class="col-xl-6 order-xl-1 col-lg-12 col-md-12 col-sm-12 order-2" data-aos="fade-up">
+						<img class="img-fluid" src="../images/chambre-enfants-2.jpg" alt="Tour de poterie">
+					</div>
+
+					<div class="col-xl-6 order-xl-2 col-lg-12 col-md-12 col-sm-12 order-1">
+						<h3 class="cottage-title">The children's room</h3>
+						<p class="desc-cottage">A bedroom for the children under the roof, exposed wooden beams with
+							fairy lights to make the children
+							feel as if they are sleeping under the stars.</p>
+						<ul class="cottage-list">
+							<li class="list_sm_padding-top">4 beds</li>
+							<li class="list_sm_padding-top">Cozy area</li>
+						</ul>
+					</div>
+				</div>
+
+				<!-- La salle d'eau -->
+				<div class="row bg-light extra-margin-first-container">
+
+					<div class="col-xl-6 order-xl-2 col-lg-12 col-md-12 col-sm-12 order-2" data-aos="fade-up">
+						<img class="img-fluid" src="../images/salledebains-1.jpg" alt="Le coin salon du Cottage">
+					</div>
+
+					<div class="col-xl-6 order-xl-1 col-lg-12 col-md-12 col-sm-12 order-1 ">
+						<h3 class="cottage-title">The bathroom</h3>
+						<p class="desc-cottage">A bathroom with an italian shower, handmade tiles made with the red clay
+							from the rivers of la Haute-Loire.</p>
+					</div>
+				</div>
+			</div>
+			<!--- End of Cottage-->
+
+			<!--- Start of Menu-->
+			<div class="container col-10">
+				<div class="row" id="the-hosts-table">
+					<div class="col navMenu">
+						<h2 class="text-center">The Host's Table</h2>
+					</div>
+				</div>
+
+				<p style="text-align: center;margin-bottom: 4%;" class="col-12">Homemade cooking and respect for the
+					environment is what you can expect from the host's table. We serve only organic meats locally
+					sourced and fruit and vegetables of the season.<br /><br />
+					By reservation you are welcome to come and share a full course meal with us and taste the
+					regional dishes made from organic produce and fresh vegetables from our own kitchen
+					garden.<br /><br />
+					Whether you are vegan or vegetarian don't worry, it would be a real pleasure to prepare
+					something special for you.<br /><br />
+					Breakfast is homemade with love, it consists of jams, breads, cakes and fresh eggs. It is free
+					for travelers using the bed and breakfast.<br /><br />
+					Here is an example of a meals you could eat at the Petit Mazilloux's table.</p>
+
+				<div class="row bg-light col-md-12" style="margin: auto;">
+					<div class="col-xl-4 offset-xl-0 col-lg-4 offset-lg-0 col-md-8 offset-md-2 col-sm-10 offset-sm-1"
+						data-aos="slide-up">
+						<div class="card view zoom">
+							<img class="card-img-top img-fluid " src="../images/fruitbreakfast.jpg"
+								alt="A bowl of fruit for breakfast">
+							<div class="card-body">
+								<h5 class="card-title" style="text-align: center;">Breakfast</h5>
+								<ul class="list-group list-group-flush">
+									<li class="list-group-item">Greek yogurt with blueberries and / or red fruits
+									</li>
+									<li class="list-group-item">Bread with or without gluten, "homemade" jams</li>
+									<li class="list-group-item">Soft boiled eggs</li>
+									<li class="list-group-item">Coffee and tea</li>
+									<li class="list-group-item">Fruit Juice</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+					<div class="col-xl-4 offset-xl-0 col-lg-4 offset-lg-0  col-md-8 offset-md-2 col-sm-10 offset-sm-1"
+						data-aos="slide-up">
+						<div class="card">
+							<img class="card-img-top img-fluid" src="../images/salade.jpg" alt="A big salad for lunch">
+							<div class="card-body">
+								<h5 class="card-title" style="text-align: center;">Lunch</h5>
+								<ul class="list-group list-group-flush">
+									<li class="list-group-item">Sandwichs</li>
+									<li class="list-group-item">Fruit</li>
+									<li class="list-group-item">Home-made cakes</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+					<div class="col-xl-4 offset-xl-0 col-lg-4 offset-lg-0 col-md-8 offset-md-2 col-sm-10 offset-sm-1"
+						data-aos="slide-up">
+						<div class="card">
+							<img class="card-img-top img-fluid " src="../images/beans-salmon.jpg"
+								alt="Plate full of beans, salmon">
+							<div class="card-body">
+								<h5 class="card-title" style="text-align: center;">Dinner</h5>
+								<ul class="list-group list-group-flush">
+									<li class="list-group-item">Green salad, stuffed eggs and garlic bread</li>
+									<li class="list-group-item">Asparagus and beans with butter, salmon and cream
+										pie</li>
+									<li class="list-group-item">Local cheese</li>
+									<li class="list-group-item">Dark chocolate mousse with praline hazelnuts</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!--- End of Menu -->
+
+			<!-- Start of flats -->
+			<div class="container col-10">
+				<div class="row" id="appartements">
+					<div class="col navMenu">
+						<h2 class="text-center">The appartements</h2>
+					</div>
+					<p style="text-align: center;margin-bottom: 4%;" class="col-12">These two appartements are
+						situated in the town centre of Le Puy en Velay in a 16th century building with splendid
+						views.<br />
+						<br />
+						<br />
+						Let yourslef be charmed by the pastel colours and soft romantic tones.
+						<br />
+						<br />
+						Both kitchens are equipped with vitroceramic cooktops, an electric oven, a fridge and a
+						washing machine. All the essentials for cooking are available for use as well as a coffee
+						machine.
+						<br />
+						<br />
+						The living rooms are equipped with a flatscreen TV with Netflix and Wifi.
+						<br />
+						<br />
+						The vintage bedrooms have brand new matresses.
+						<br />
+						<br />
+						The bathrooms have Italian showers, a glass sink, a mirror and suspended toilets.
+						<br />
+						<br />
+						Bed linen and bathroom linen are included.
+					</p>
+				</div>
+
+				<div class="row bg-light">
+					<div class="col-md-6">
+						<h3 class="text-center">13A Rue St Pierre</h3>
+						<p>The 2nd floor appartement in Le Puy-en-Velay can accommodate 4 people.</p>
+						<ul class="room-list">
+							<li>2 double beds</li>
+							<li class="list_sm_padding-top">Fully equiped kitchen</li>
+							<li class="list_sm_padding-top">Italian shower</li>
+							<li class="list_sm_padding-top">View of the market</li>
+							<li class="list_sm_padding-top">Free Wifi</li>
+							<li class="list_sm_padding-top">From 67£ per night</li>
+						</ul>
+					</div>
+					<div class="col-md-6" data-aos="fade-up">
+						<img class="img-fluid image-extra-margin img-shadow" src="../images/chambre-duplex-1.jpg"
+							alt="A bedroom and a mezzanine">
+					</div>
+					<div class="col-md-6" data-aos="fade-up">
+						<img class="img-fluid image-extra-margin padding-bottom img-shadow"
+							src="../images/coincuisine.jpg" alt="A fully equiped kitchen area">
+					</div>
+					<div class="col-md-6" data-aos="fade-up">
+						<img class="img-fluid image-extra-margin padding-bottom img-shadow"
+							src="../images/salledebains.jpg" alt="A bathroom">
+					</div>
+				</div>
+
+
+				<div class="row bg-light" style="margin-top: 6%;">
+
+					<div class="row bg-light">
+						<div class="col-md-6">
+							<h3 class="text-center">13B Rue St Pierre</h3>
+							<p class="flat-description-details">The 1st floor appartement in Le Puy-en-Velay can accommodate 4 people.</p>
+							<ul class="room-list">
+								<li>1 double bed</li>
+								<li class="list_sm_padding-top">Sofa bed</li>
+								<li class="list_sm_padding-top">Fully equiped kitchen</li>
+								<li class="list_sm_padding-top">Italian shower</li>
+								<li class="list_sm_padding-top">View of the market</li>
+								<li class="list_sm_padding-top">Free Wifi</li>
+								<li class="list_sm_padding-top">From 67£ per night</li>
+							</ul>
+						</div>
+						<div class="col-md-6" data-aos="fade-up">
+							<img class="img-fluid image-extra-margin img-shadow" src="../images/13b-stpierre.jpg"
+								alt="A comfy front room">
+						</div>
+						<div class="col-md-6" data-aos="fade-up">
+							<img class="img-fluid image-extra-margin padding-bottom img-shadow"
+								src="../images/20200911_163951.jpg" alt="A fully equiped kitchen area">
+						</div>
+						<div class="col-md-6" data-aos="fade-up">
+							<img class="img-fluid image-extra-margin padding-bottom img-shadow"
+								src="../images/20200911_164146.jpg" alt="A big bedroom">
+						</div>
+					</div>
+				</div>
+
+				<div style="width:100%;margin:auto;text-align: center;">
+					<a href="https://www.booking.com/hotel/fr/un-charmant-f2-pour-les-voyageurs-et-les-pelerins.en-gb.html?aid=964694&label=Share-VK2yqZA%401596015689&sid=01bbd2566d7cba2f103683b8b6f1daf8&checkin=2020-09-29&checkout=2020-09-30&from_sn=android&group_adults=2&group_children=0&lang=en-gb&no_rooms=1&req_adults=2&req_children=0&room1=A%2CA&sb_price_type=total&soz=1&type=total&lang_click=other;cdl=fr;lang_changed=1"
+						class="btn btn-outline-secondary" id="btn-lien-booking" target="_blank">Reserve these rooms via
+						Booking.com</a>
+				</div>
+			</div>
+			<!-- end of flats -->
+
+			<!-- Start of Activités -->
+			<div class="container col-10">
+				<div class="row" id="region">
+					<div class="col navMenu">
+						<h2 class="text-center">The Region</h2>
+					</div>
+				</div>
+
+				<div class="row bg-light">
+					<div class="col-md-12">
+						<h3 class="text-center">The Haute Loire, filled with promising activities</h3>
+						<p>Situated at the heart of the Auvergne in the middle-east of the Massif Central, the
+							Haute-Loire provides a great number of activities in nature : (hikes, Mountain Biking,
+							horseriding, white water rafting, fishing, tree top adventure course, winter sports) and
+							all this while being surrounded by breathtaking landscapes, volcanos, lakes and rivers.
+							Less than a 20km radius away you will be able to experience these precious gems of the
+							Haute Loire and the Ardèche.</p>
+					</div>
+
+
+					<div class="row img-container">
+
+						<img src="../images/Lacissarles.jpg" class="col-lg-5 col-md-12" id="lac-photo"
+							alt="Lac d'Issarles">
+
+						<img src="../images/mezenc1.jpg" class="col-lg-5 offset-lg-2 col-md-12" id="mezenc-photo"
+							alt="Mezenc">
+
+						<img src="../images/goudet.jpg" class="col-lg-5 col-md-12" id="goudet-photo" alt="Goudet">
+
+						<img src="../images/viaducrecoumene.JPG" class="col-lg-5 offset-lg-2 col-md-12"
+							id="viaduc-photo" alt="viaduc de la Recoumene">
+
+					</div>
+
+				</div>
+			</div>
+			<!-- end of activity -->
+
+			<!--- Start of stages -->
+			<div class="container col-10">
+				<div class="row" id="courses">
+					<div class="col navMenu">
+						<h2 class="text-center">The courses</h2>
+					</div>
+				</div>
+
+				<div class="row bg-light">
+					<div class="col-xl-6 col-lg-12 col-md-12 col-sm-12 stages">
+						<p class="stages-bio-intro-extra-padding">Since childhood I have been transported by creativity, drawing and sewing. It was therefore natural for me to pursuit my studies at Art School in London.<br />
+							Throughout those years I discovered and developed numerous textile techniques but ceramics captivated my attention the most which led me to continue my studies in Ceramic and Design in Cornwall.
+							<br/>
+							Also, I joined Seth Cardew's master classes, a renown potter from the south ouest of England.</p>
+					</div>
+					<div class="col-xl-6 col-lg-12 col-md-12 col-sm-12" data-aos="fade-up">
+						<img class="img-fluid extra-padding" src="../images/atelier.jpeg">
+					</div>
+				</div>
+
+				<div class="row bg-light"><br /></div>
+
+				<div class="row bg-light">
+					<div class="col-xl-6 order-xl-1 col-lg-12 col-md-12 col-sm-12 order-2" data-aos="fade-up">
+						<img class="img-fluid " src="../images/atelier-3.jpg">
+					</div>
+					<div class="col-xl-6 order-xl-2 col-lg-12 col-md-12 col-sm-12 order-1">
+						<p class="stages-bio-intro">Thanks to him, I perfected my techniques on the wheel and my knowledge of glazes.
+							Eventually, having developped a large repertoire of skills in ceramics and design, I decided to consolidate my academic path by doing a Bachelor’s degree in Art and Design at Glasgow School of Art.
+							<br/>
+							After many years working with and around ceramics, an opportunity to return into the world of textiles arised.
+							It was at the Musée des Tissus et des Arts Décoratifs in Lyon that I was able to further my knowledge that had already developped in London by participating in embroidery, felt and textile sculpting master classes.
+							<br/>
+							Today my artistic endeavors are a fusion of both fields of study.
+						</p>
+					</div>
+				</div>
+
+				<div class="row bg-light"><br /></div>
+
+
+				<!-- Start of stage Ceramique -->
+
+				<h3 class="stage-title" style="width:auto;" id="ceramic_course">Ceramic courses</h3>
+
+
+				<!-- Pitfiring -->
+				<div class="row bg-light extra-margin-first-container">
+
+					<div class="col-xl-6 order-xl-2 col-lg-12 col-md-12 col-sm-12 order-2" data-aos="fade-up">
+						<img class="img-fluid" src="../images/pitfiring-1.jpeg" alt="Pitfiring">
+					</div>
+
+					<div class="col-xl-6 order-xl-1 col-lg-12 col-md-12 col-sm-12 order-1">
+						<h3 class="text-center">Pitfiring</h3>
+						<p class="stage-histoire-desc text-justify">Pitfiring is a firing technique which requires an open wood fire built into the ground, it is a technique that is more than 30 000 years old. The prehistoric man shaped the earth and discovered that fire hardened the earth and cooked it.</p>
+						<ul class="stage-list">
+							<li class="list_sm_padding-top">4 people</li>
+							<li class="list_sm_padding-top">All levels</li>
+							<li class="list_sm_padding-top">7 day course</li>
+							<li class="list_sm_padding-top">Accomodations available on hand</li>
+						</ul>
+					</div>
+				</div>
+
+				<!-- Raku -->
+				<div class="row bg-light extra-margin-container">
+
+					<div class="col-xl-6 order-xl-1 col-lg-12 col-md-12 col-sm-12 order-2" data-aos="fade-up">
+						<img class="img-fluid" src="../images/raku-1.jpeg" alt="Raku">
+					</div>
+
+					<div class="col-xl-6 order-xl-2 col-lg-12 col-md-12 col-sm-12 order-1">
+						<h3 class="text-center">Raku</h3>
+						<p class="stage-histoire-desc text-justify">Raku is the result of a glaze technique developped in Japan during the 16th century. It is essentially linked to the creation of bowls for tea ceremonies.</p>
+						<ul class="stage-list">
+							<li class="list_sm_padding-top">4 people</li>
+							<li class="list_sm_padding-top">All levels</li>
+							<li class="list_sm_padding-top">7 day course</li>
+							<li class="list_sm_padding-top">Accomodations available on hand</li>
+						</ul>
+					</div>
+				</div>
+
+				<!-- Décoration sur céramique -->
+				<div class="row bg-light extra-margin-first-container">
+
+					<div class="col-xl-6 order-xl-2 col-lg-12 col-md-12 col-sm-12 order-2" data-aos="fade-up">
+						<img class="img-fluid" src="../images/decorationceramique-1.jpeg" alt="Décoration sur céramique">
+					</div>
+
+					<div class="col-xl-6 order-xl-1 col-lg-12 col-md-12 col-sm-12 order-1">
+						<h3 class="text-center">Ceramic painting</h3>
+						<p class="stage-histoire-desc text-justify">Even though pottery can be left in its natural state, we frequently see them decorated with different designs. The designs adapt to the complex surface of the form.</p>
+						<ul class="stage-list">
+							<li class="list_sm_padding-top">4 people</li>
+							<li class="list_sm_padding-top">All levels</li>
+							<li class="list_sm_padding-top">7 day course</li>
+							<li class="list_sm_padding-top">Accomodations available on hand</li>
+						</ul>
+					</div>
+				</div>
+
+				<!-- Tour de poterie -->
+				<div class="row bg-light extra-margin-container">
+
+					<div class="col-xl-6 order-xl-1 col-lg-12 col-md-12 col-sm-12 order-2" data-aos="fade-up">
+						<img class="img-fluid" src="../images/tourdepoterie-1.jpeg" alt="Tour de poterie">
+					</div>
+
+					<div class="col-xl-6 order-xl-2 col-lg-12 col-md-12 col-sm-12 order-1">
+						<h3 class="text-center">The potter's wheel</h3>
+						<p class="stage-histoire-desc text-justify">This technique appeared around 4000 years bc and revolutionized pottery by enabling one to quickly obtain shapes that are more uniform and much lighter in weight.</p>
+						<ul class="stage-list">
+							<li class="list_sm_padding-top">4 people</li>
+							<li class="list_sm_padding-top">All levels</li>
+							<li class="list_sm_padding-top">7 day course</li>
+							<li class="list_sm_padding-top">Accomodations available on hand</li>
+						</ul>
+					</div>
+				</div>
+
+				<!-- Info for Ceramic courses -->
+				<div class="row bg-light extra_margin-top">
+					<p class="contact_stage-section text-center"><em>If you wish more information or make a reservation of one of our ceramic courses you can contact me directly :</em>
+						<br /><br />
+						<a href="tel:++33677971875" class="phone-ref">+33 (0)6-77-97-18-75</a>
+						<br /><br />
+						<a href="mailto:gillettvanessa@gmail.com" class="mail-ref">gillettvanessa@gmail.com</a>
+						<br /><br />
+						<a href="#" download="" class="btn btn-outline-success download-btn_container"
+							title="Télécharger la brochure 'Stage Céramique'">
+							Download the Ceramic Course brochure
+						</a>
+					</p>
+				</div>
+
+				<div class="row bg-light"><br /></div>
+
+
+				<!-- Stage de Textile -->
+				<h3 class="stage-title w-100" id="textile_course">Textile courses</h3>
+
+
+
+				<!-- Peinture sur Soie -->
+				<div class="row bg-light extra-margin-first-container">
+
+					<div class="col-xl-6 order-xl-2 col-lg-12 col-md-12 col-sm-12 order-2" data-aos="fade-up">
+						<img class="img-fluid" src="../images/impressiontextile-1.jpg" alt="peinture sur soie">
+					</div>
+
+					<div class="col-xl-6 order-xl-1 col-lg-12 col-md-12 col-sm-12 order-1">
+						<h3 class="text-center">Silk painting</h3>
+						<p class="stage-histoire-desc text-justify">This procedure is called Yuzen, in tribute to the creator Miyazaki Yuzensai (1654-1736), who perfected this technique. It is based on the possibility to achieve painting on silk, the tracing with rice glue creates barriers between the zones where the paint is applied. The colour can be applied with a paint brush or by dipping the fabric..</p>
+						<ul class="stage-list">
+							<li class="list_sm_padding-top">4 people</li>
+							<li class="list_sm_padding-top">All levels</li>
+							<li class="list_sm_padding-top">2 day course</li>
+							<li class="list_sm_padding-top">Accomodations available on hand</li>
+						</ul>
+					</div>
+				</div>
+
+				<!-- Feutrage -->
+				<div class="row bg-light extra-margin-container">
+
+					<div class="col-xl-6 order-xl-1 col-lg-12 col-md-12 col-sm-12 order-2" data-aos="fade-up">
+						<img class="img-fluid" src="../images/feutrage-1.jpg" alt="feutrage">
+					</div>
+
+					<div class="col-xl-6 order-xl-2 col-lg-12 col-md-12 col-sm-12 order-1">
+						<h3 class="text-center">Felting</h3>
+						<p class="stage-histoire-desc text-justify">The origins of felting date back without doubt to the Middle Paleolithic period (100.000 years BC), during the ice-age when Man was trying to escape from the cold by finding shelter in caves and protecting themselves with animal furs they hunted. The felting of the wool would happen when they slept on it (due to the friction).</p>
+						<ul class="stage-list">
+							<li class="list_sm_padding-top">4 people</li>
+							<li class="list_sm_padding-top">All levels</li>
+							<li class="list_sm_padding-top">2 day course</li>
+							<li class="list_sm_padding-top">Accomodations available on hand</li>
+						</ul>
+					</div>
+
+				</div>
+
+				<!-- Info for Textile  courses -->
+
+				<div class="row bg-light extra_margin-top">
+					<p class="contact_stage-section text-center"><em>If you wish more information or make a reservation of one of our textile courses you can contact me directly : </em>
+						<br /><br />
+						<a href="tel:++33677971875" class="phone-ref">+33 (0)6-77-97-18-75</a>
+						<br /><br />
+						<a href="mailto:gillettvanessa@gmail.com" class="mail-ref">gillettvanessa@gmail.com</a>
+						<br /><br />
+						<a href="#" download="" class="btn btn-outline-success download-btn_container"
+							title="Télécharger la brochure 'Stage Textile'">
+							Download the Textile Course brochure
+						</a>
+					</p>
+				</div>
+
+			</div>
+			<!--- End of stages textile-->
+
+			<!--- Start of Our Location -->
+			<div class="container col-12">
+				<div class="row" id="contact">
+					<div class="col navMenu">
+						<h2 class="text-center">Contact</h2>
+					</div>
+				</div>
+				<div class="row">
+					<iframe class="col-md-6 offset-md-1"
+						src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3337.2594290102566!2d4.0448023!3d44.906736!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12b4b514f11b2e67%3A0xa83b722bea6450e8!2sLa%20chambre%20d&#39;h%C3%B4te%20du%20Petit%20Mazilloux!5e1!3m2!1sen!2sfr!4v1604496880446!5m2!1sen!2sfr"
+						width="600" height="450" frameborder="0" style="border:0;" allowfullscreen=""
+						aria-hidden="false" tabindex="0"></iframe>
+
+					<div class="col-md-3 offset-md-1 contact-info-container">
+						<h3 class="text-center">Adress</h3>
+						<p><a href="https://www.google.com/maps/place/Le+Mazilloux,+43150+Pr%C3%A9sailles/@44.906736,4.0448023,17z/data=!3m1!4b1!4m5!3m4!1s0x12b4b514faa5e459:0xf47a5a8e57bad31c!8m2!3d44.906736!4d4.046991"
+								target="_blank" id="link-to-maps">Le Petit Mazilloux <br />
+								43150 <br />
+								Présailles</a></p>
+						<h3>Email</h3>
+						<p> <a href="mailto:gillettvanessa@gmail.com" class="mail-ref">gillettvanessa@gmail.com</a></p>
+						<h3>Phone</h3>
+						<p><a href="tel:++33677971875" class="phone-ref">+33 (0)6-77-97-18-75</a></p>
+						<h4>Social Media</h4>
+						<p><a href="https://lepetitmazilloux.blogspot.com/" id="link-to-blog-1">LePetitMazilloux
+								(Blogspot.com)</a></p>
+						<p><a href="https://www.instagram.com/lepetitmazilloux/" id="link-to-instagram"
+								target="_blank">Instagram</a>
+						</p>
+						<p><a href="http://vanessagillettceramiques.blogspot.com/"
+								id="link-to-blog-2">VanessaGillettCéramiques
+								(Blogspot.com)</a></p>
+
+						<h4>Our partners</h4>
+						<p><a href="https://aneazimut.com/" target="_blank" id="link-to-blog-1">Ane Azimut</a></p>
+						<p><a href="tel:++33660471702" id="link-to-blog-1">+33 (0)6-60-47-17-02</a></p>
+					</div>
+				</div>
+			</div>
+			<!--- End of Our Location -->
+
+			<!-- start of footer -->
+			<div class="row footer bg-light col-12">
+				<div class="col-8-xl col-lg-8 col-md-8 offset-md-2 col-sm-10 offset-sm-1 col-12">
+					<p class="text-center">You can book all of our accommodations via :<br />
+						<a href="https://www.booking.com/hotel/fr/la-chambre-d-39-hote-du-petit-mazilloux.en-gb.html?aid=397594;label=gog235jc-1FCAEoggI46AdIM1gDaE2IAQGYAQm4ARfIAQzYAQHoAQH4AQyIAgGoAgO4Ao3eoPkFwAIB0gIkNzFlZmExNjctOTY0Zi00ZGRmLWE0ZTgtNTFkMTI0YTY0Yjc12AIG4AIB;sid=af36632c1cb5fd89f2fb4199f57b32d2;dest_id=-1460024;dest_type=city;dist=0;group_adults=2;group_children=0;hapos=1;hpos=1;no_rooms=1;room1=A%2CA;sb_price_type=total;sr_order=popularity;srepoch=1596469013;srpvid=7c4e6dcabe4b00c3;type=total;ucfs=1&#hotelTmpl"
+							target="_blank" id="link-to-booking"><strong>Booking.com</strong></a>
+					</p>
+					<p class="text-center">or by simply calling us<br />
+						<a href="tel:++33677971875" class="phone-ref"><strong>+33 (0)6-77-97-18-75</strong></a>
+					</p>
+				</div>
+			</div>
+
+			<div class="col-8-xl col-lg-8 col-md-8 offset-md-2 col-sm-10 offset-sm-1 ccol-12">
+				<p class="text-center" style="flex-wrap: wrap;">Designed & Developped by<br /> <a
+						href="http://www.curtisjackson-developer.com/" target="_blank" id="link-to-site"><strong>The Fox
+							Byte</strong></a></p>
+			</div>
+
+			<div class="col-12">
+				<p class="text-center">Copyright &copy; 2021</p>
+			</div>
+
+			<footer class="container">
+				<div class="row only-mobile">
+					<div class="col-6 offset-2">
+						<a class="btn btn-success btn-block text-center" href="tel:++33677971875"><i class="fa fa-phone"
+								aria-hidden="true"></i> Appeler</a>
+					</div>
+				</div>
+			</footer>
+
+			<!-- Cookie Consent Banner -->
+			<script src="https://cdn.websitepolicies.net/lib/cookieconsent/1.0.3/cookieconsent.min.js" defer></script>
+			<script>window.addEventListener("load", function () { window.wpcc.init({ "border": "thin", "corners": "small", "colors": { "popup": { "background": "#f6f6f6", "text": "#000000", "border": "#555555" }, "button": { "background": "#555555", "text": "#ffffff" } }, "position": "bottom", "content": { "message": "Ce site utilise des cookies pour vous garantir la meilleure expérience sur notre site. En utilisant notre site, vous acceptez les cookies.", "link": "En savoir plus", "button": "Accepter" } }) });</script>
+
+			<script src="../js/jquery-3.3.1.min.js"></script>
+			<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+			<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+			<script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
+			<script type="text/javascript" src="../js/map.js"></script>
+			<script type="text/javascript" src="../js/smooth-scroll.js"></script>
+			<script src="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.js"></script>
+			<script type="text/javascript" src="../js/image-effect.js"></script>
+			<script type="text/javascript" src="../js/script.js"></script>
+</body>
+
+</html>

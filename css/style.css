@@ -1,0 +1,567 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+html {
+	scroll-behavior: smooth;
+}
+
+body{
+	font-family: 'Merienda';
+	font-size: 16px;
+}
+
+/* Navigation Style */
+
+.lpm_navbar_logo{
+	width: 375px;
+	display: inline-block;
+}
+
+.lpm_sm_navbar_logo{
+	display: none;
+}
+
+.nav-item{
+	padding-right: 12px;
+	padding-left: 12px;
+}
+
+.nav-link{
+	font-size: 18px;
+}
+
+.flag{
+	max-height: 20px;
+	max-width: 20px;
+	margin-top: 10px;
+}
+
+.nav-link.active{
+	background-color: snow !important;
+}
+
+.dropdown-item.active, .dropdown-item:active{
+	background-color:#f8f9fa !important;
+	color:black;
+}
+
+.img-shadow{
+	padding: 0 !important;
+	box-shadow: 10px 5px 15px #707070;
+}
+
+
+.reserve-container{
+	position: relative;
+}
+
+.card-body{
+	-webkit-transition: all 1s ease; /* Safari and Chrome */
+  	-moz-transition: all 1s ease; /* Firefox */
+  	-o-transition: all 1s ease; /* IE 9 */
+  	-ms-transition: all 1s ease; /* Opera */
+  	transition: all 1s ease;
+}
+
+.card-body:hover{
+	-webkit-transform: scale(1.05);
+	-moz-transform: scale(1.05);
+	-o-transform: scale(1.05);
+	-ms-transform: scale(1.05);
+	transform: scale(1.05);
+}
+
+.reserve-text{
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.image-reserve{
+	opacity: 0.4;
+	max-height: 750px;
+}
+
+.carousel-caption{
+	top: 40%;
+}
+
+.img-slider{
+	min-height: 320px;
+}
+
+.navMenu{
+	padding-top: 75px;
+	padding-bottom: 20px;
+}
+
+.card-img-top{
+	height: 200px;
+}
+
+.row {
+	display: flex;
+	flex-wrap: wrap;
+	padding: 0 4px;
+  }
+  /* .bg-light{
+	background-color:	#FFF8DC !important;
+} */
+
+.navbar{
+	background-color:	#E7DADA !important;
+}
+
+ 
+/* Welcome to Le Petit Mazilloux */
+.welcome-header{
+	margin-top: 4%;
+	margin-bottom: 4%;
+	font-family: 'Merienda' im !important;
+}
+
+/* Presentation of LPM Content */
+.p_presentation_desc{
+	margin-bottom: 4%;
+}
+
+/* Room List Layout */
+.room-list{
+	list-style: none;
+	text-align: center;
+}
+
+/* Room Terre Cuite Layout */
+
+.room-terrecuite{
+	display: flex;
+	align-items: center;
+}
+
+.list_sm_padding-top{
+	padding-top:1%;
+}
+
+.list_md_padding-top{
+	padding-top: 3%;
+}
+
+.terrecuite-description{
+	text-align: justify;
+	margin-top: 2rem;
+}
+
+.terrecuite-description-details{
+	text-align: center;
+}
+
+.trigger_reservation_modal{
+	margin-top:15px;
+	text-align: center;
+	overflow: hidden;
+	white-space: normal;
+	word-break: normal;
+	padding: auto;
+}
+
+.trigger_reservation_modal:hover{
+	color:white !important;
+}
+
+/* Room Porcelaine Layout */
+.room-porcelaine{
+	display: flex;
+	align-items: center;
+	margin-top: 2%;
+}
+
+.room-porcelaine-description{
+	text-align: justify;
+	margin-top: 2rem;
+}
+
+.room-porcelaine-description-details{
+	text-align: center;
+}
+
+#btn-lien-booking{
+	margin-top:15px;
+	text-align: center;
+	overflow: hidden;
+	white-space: normal;
+	word-break: normal;
+}
+
+.span_logement{
+	color:red;
+}
+
+/* Form */
+.font-sm{
+	font-size: 14px;
+	font-weight: bold;
+}
+
+/* Cottage */
+.cottage{
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.cottage-title{
+	text-align: center;
+	margin: auto;
+}
+
+.desc-cottage{
+	text-align: justify;
+	margin-top: 10px;
+}
+
+.extra-margin-image{
+	margin-top: 2%;
+}
+
+.cottage-description{
+	text-align: justify;
+	align-items: center;
+	margin-top: 10px;
+}
+
+.cottage-list{
+	list-style: none;
+}
+
+
+/* Flats container */
+
+.flat-description-details{
+	text-align: center;
+	margin-top: 2rem;
+}
+
+.extra-padding{
+	padding-top:4%;
+}
+
+.extra_margin-bottom{
+	margin-bottom: 4%;
+}
+
+#btn-lien-booking-flats{
+	margin-top:15px;
+	  background-color: gray !important;
+	  border: gray !important;
+	  text-align: center;
+}
+
+.padding-bottom{
+	padding-bottom:4%;
+}
+
+/* Activity Page Design*/
+  .img-container{
+	  display: flex;
+	  flex-wrap: wrap;
+  }
+
+#lac-photo, #mezenc-photo, #goudet-photo, #viaduc-photo, #puy-photo{
+	margin-top: 2%;
+}
+
+.slideshow-wrapper{
+	display: flex;
+	flex-wrap: wrap;
+}
+
+/* Stage container */
+
+.stages-bio-intro-extra-padding{
+	text-align: justify;
+	padding-top: 3%;
+	align-items: center;
+}
+
+.stages-bio-intro{
+	text-align: justify;
+	align-items: center;
+}
+
+#stage-textile-title{
+	margin-top:6%;
+}
+
+.stage-title{
+	text-align: center;
+	margin-top: 4%;
+} 
+
+.stage-histoire-desc{
+	margin-top: 2%;
+}
+
+.stage-list{
+	list-style: none;
+}
+
+.extra_margin-top{
+	margin-top: 2%;
+}
+
+.extra-margin-first-container{
+	margin-top: 8%;
+}
+
+.extra-margin-container{
+	margin-top: 6%;
+}
+
+/* Contact about Stage */
+.download_btn_container{
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.download-btn{
+	overflow: hidden;
+	white-space: normal;
+	word-break: normal;
+	margin-top: 0.5rem;
+}
+
+.contact_stage-section{
+	margin:2% auto 0;
+}
+
+.phone-ref{
+	text-decoration: none;
+	color:black !important;
+	font-size: 17px;
+}
+
+.phone-ref:hover{
+	text-decoration: none;
+	color:black;
+	font-weight: bolder;
+}
+
+.mail-ref{
+	text-decoration: none;
+	color:black !important;
+	font-size: 17px;
+}
+
+.mail-ref:hover{
+	text-decoration: none;
+	color:black;
+	font-weight: bolder;
+}
+
+/* Developpeur Contact */
+#sm_font_modal{
+	font-size: 12px;
+}
+#dev_support_mail{
+	text-decoration: none;
+	color:black !important;
+	font-weight: bold;
+}
+
+/* Contact Info Section */
+.contact-info-container{
+	text-align: center;
+}
+
+#link-to-booking{
+	text-decoration: none;
+	color: black;
+	font-size:1.2em;
+}
+
+#link-to-site{
+	text-decoration: none;
+	color: black;
+	font-size:1.2em;
+}
+
+#link-to-maps{
+	text-decoration: none;
+	color: black;
+}
+
+#link-to-maps:hover{
+	text-decoration: none;
+	color: black;
+	font-weight: bold;
+}
+
+#link-to-blog-1{
+	text-decoration: none;
+	color: black;
+}
+
+#link-to-blog-1:hover{
+	font-weight: bold;
+}
+
+#link-to-instagram{
+	text-decoration: none;
+	color: black;
+}
+
+#link-to-instagram:hover{
+	font-weight: bold;
+}
+
+#link-to-blog-2{
+	text-decoration: none;
+	color: black;
+}
+
+#link-to-blog-2:hover{
+	font-weight: bold;
+}
+
+.image-extra-margin{
+	margin-top: 4% !important;
+}
+
+.nature-media-container{
+	margin-top: 5%;
+	display: flex;
+	flex-wrap: wrap;
+}
+
+#mentions_legales_link{
+	text-decoration: none;
+	color: black;
+}
+
+#mentions_legales_link:hover{
+	font-weight: bold;
+}
+
+#lpm_link_mentions_legales{
+	text-decoration: none;
+	color: black;
+	font-weight: bold;
+
+}
+
+#lpm_link_mentions_legales:hover{
+	text-decoration: underline;
+}
+
+#desc_mentions_legales{
+	text-align: left;
+	font-size: 14px;
+}
+
+
+#phone_ref_mentions_legales{
+	text-decoration: none;
+	color: black;
+	line-height: 1.6;
+}
+
+#phone_ref_mentions_legales:hover{
+	font-weight: bold;
+}
+
+#mail_ref_mentions_legales{
+	text-decoration: none;
+	color: black;
+}
+
+#mail_ref_mentions_legales:hover{
+	font-weight: bold;
+}
+
+#desc_mentions_legales_2{
+	text-align: left;
+	font-size: 14px;
+	line-height: 1.6;
+}
+
+#desc_mentions_legales_3{
+	text-align: left;
+	font-size: 14px;
+	line-height: 1.6;
+}
+
+#sm_font{
+	font-size: 12px;
+}
+
+.conditions_utilisation{
+	text-align: left;
+	font-size: 14px;
+	line-height: 1.6;
+}
+
+.mentions_legales_header{
+	font-weight: bold;
+	text-decoration:underline;
+}
+
+/* Media Queries */
+@media screen and (max-width : 990px){
+	.lpm_navbar_logo{
+		display: none;
+	}
+
+	.lpm_sm_navbar_logo{
+		display: block;
+		max-width: 40px;
+	}
+}
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+  @media screen and (max-width: 800px) {
+	.column-imgs {
+	  flex: 50%;
+	  max-width: 50%;
+	}
+  }
+  
+  /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+  @media screen and (max-width: 600px) {
+	.column-imgs {
+	  flex: 100%;
+	  max-width: 100%;
+	}
+  }
+
+@media screen and (max-width : 1920px){
+  .only-mobile{
+  visibility:hidden;
+  }
+}
+
+@media screen and (max-width : 506px){
+.only-mobile{
+  visibility:visible;
+  }
+}
+
+/* End of Media Query Breakpoints*/
+
+.footer{
+	margin-bottom: 30px;
+	margin-top: 30px;
+	padding-top: 20px;
+
+}
+.social-icon{
+	font-size:28; 
+}
+
+footer{
+	position: fixed;
+	bottom: 0px;
+	padding-top: 20px;
+}
