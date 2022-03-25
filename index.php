@@ -523,7 +523,7 @@ if (isset($_POST['submit'])) {
 									<label for="message">Message :</label>
 									<textarea class="form-control" id="message" placeholder="Message" name="informations" rows="4"></textarea>
 								</div>
-								<!-- <div class="g-recaptcha" data-sitekey="6Lf_zH0eAAAAAC34Db0GuFwZ9lf7Ckx9k-oNo1ZT"></div> -->
+								<div class="g-recaptcha" data-sitekey="6Lf_zH0eAAAAAC34Db0GuFwZ9lf7Ckx9k-oNo1ZT"></div>
 
 								<hr/>
 					
@@ -1480,6 +1480,15 @@ if (isset($_POST['submit'])) {
 			// alert($('#inputNbEnfants option:selected').val());
 			$('#hiddenInputNbEnfants').val($('#inputNbEnfants option:selected').val());
 		});
+
+
+		$("#form_submit_btn").click(function (){
+			if ($("#inputNbAdultes").val() == null){
+				alert("Veuillez renseigner le nombre d'adulte(s)");
+			} else if ($("#inputNbEnfants").val() == null){
+				alert("Veuillez renseigner le nombre d'enfants(s)");
+			}
+		})
 
 
 	// 	$("#inputNbAdultes").change(function() {
