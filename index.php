@@ -1483,12 +1483,61 @@ if (isset($_POST['submit'])) {
 
 
 		$("#form_submit_btn").click(function (){
+
 			if ($("#inputNbAdultes").val() == null){
 				alert("Veuillez renseigner le nombre d'adulte(s)");
 			} else if ($("#inputNbEnfants").val() == null){
 				alert("Veuillez renseigner le nombre d'enfants(s)");
 			}
-		})
+
+			// if ($("#inputNbEnfants").val() == null || $("#inputNbEnfants").val() == null){
+
+			// 	alert("Veuillez choisir le nombre d'adultes et d'enfants ainsi que les dates d'arrivée et de départ afin de calculer le montant de votre séjour.");
+
+			// 	} else if ($("#from-date").val() == "" || $("#to-date").val() == ""){
+			// 	alert("Veuillez choisir les dates d'arrivée et de départ afin de calculer le montant de votre séjour.");
+
+			// 	} else {
+
+			// 	$( "#hidden-difference-container" ).removeClass( "d-none" );
+			// 	$( "#hidden-total_hebergement-container" ).removeClass( "d-none" );
+
+			// 	if( $("#inputLogement").val() == "Chambre Porcelaine + Chambre Enfant") {
+					
+			// 		var nb_nights = $("#hidden-date-diff").val();
+			// 		var price_per_night = 80;
+			// 		var price_optional_room = 50;
+			// 		var total_hebergement = nb_nights * price_per_night + nb_nights * price_optional_room;
+
+			// 		$('#total_hebergement').val(total_hebergement + ' €');
+
+			// 		var acompte = total_hebergement * 30 / 100;
+			// 		$('#acompte').val(acompte + ' €');
+
+			// 	} else if ($("#inputLogement").val() == "Chambre Porcelaine")  {
+
+			// 		var nb_nights = $("#hidden-date-diff").val();
+			// 		var price_per_night = 80;
+			// 		var total_hebergement = nb_nights * price_per_night;
+
+			// 		$('#total_hebergement').val(total_hebergement + ' €');
+
+			// 		var acompte = total_hebergement * 30 / 100;
+			// 		$('#acompte').val(acompte + ' €');
+
+			// 	} else {
+
+			// 		var nb_nights = $("#hidden-date-diff").val();
+			// 		var price_per_night = 80;
+			// 		var total_hebergement = nb_nights * price_per_night;
+
+			// 		$('#total_hebergement').val(total_hebergement + ' €');
+
+			// 		var acompte = total_hebergement * 30 / 100;
+			// 		$('#acompte').val(acompte + ' €');
+			// 	}
+			// }		
+		});
 
 
 	// 	$("#inputNbAdultes").change(function() {
@@ -1546,7 +1595,6 @@ if (isset($_POST['submit'])) {
 			$("#inputLogement").html("<option value='Chambre Porcelaine' name='chambre_porcelaine'>Chambre Porcelaine</option><option value='Chambre Terre Cuite' name='chambre_terrecuite'>Chambre Terre Cuite</option>");
 		}
 	});
-
 	
 	$("#calculer_hebergement").click(function (){
 
@@ -1598,6 +1646,62 @@ if (isset($_POST['submit'])) {
 			}
 		}		
 	});
+
+
+	$("#form_submit_btn").click(function (){
+
+		if ($("#inputNbEnfants").val() == null || $("#inputNbEnfants").val() == null){
+
+			alert("Veuillez choisir le nombre d'adultes et d'enfants ainsi que les dates d'arrivée et de départ afin de calculer le montant de votre séjour.");
+
+		} else if ($("#from-date").val() == "" || $("#to-date").val() == ""){
+			alert("Veuillez choisir les dates d'arrivée et de départ afin de calculer le montant de votre séjour.");
+
+		} else {
+
+			$( "#hidden-difference-container" ).removeClass( "d-none" );
+			$( "#hidden-total_hebergement-container" ).removeClass( "d-none" );
+			
+			if( $("#inputLogement").val() == "Chambre Porcelaine + Chambre Enfant") {
+				
+				var nb_nights = $("#hidden-date-diff").val();
+				var price_per_night = 80;
+				var price_optional_room = 50;
+				var total_hebergement = nb_nights * price_per_night + nb_nights * price_optional_room;
+
+				$('#total_hebergement').val(total_hebergement + ' €');
+
+				var acompte = total_hebergement * 30 / 100;
+				$('#acompte').val(acompte + ' €');
+				alert(total_hebergement);
+
+			} else if ($("#inputLogement").val() == "Chambre Porcelaine")  {
+
+				var nb_nights = $("#hidden-date-diff").val();
+				var price_per_night = 80;
+				var total_hebergement = nb_nights * price_per_night;
+
+				$('#total_hebergement').val(total_hebergement + ' €');
+
+				var acompte = total_hebergement * 30 / 100;
+				$('#acompte').val(acompte + ' €');
+				alert(total_hebergement);
+
+			} else {
+
+				var nb_nights = $("#hidden-date-diff").val();
+				var price_per_night = 80;
+				var total_hebergement = nb_nights * price_per_night;
+
+				$('#total_hebergement').val(total_hebergement + ' €');
+
+				var acompte = total_hebergement * 30 / 100;
+				$('#acompte').val(acompte + ' €');
+
+				alert(total_hebergement);
+			}
+		}		
+		});
 
 
 
@@ -1714,11 +1818,6 @@ if (isset($_POST['submit'])) {
 		// 	departure.setAttribute('min', newFormatedDate);
 
 		// 	alert(newFormatedDate);
-
-
-
-			
-
 		// }
 
 		
@@ -1773,6 +1872,8 @@ if (isset($_POST['submit'])) {
 				}
 				});
 			});
+
+			// $("#total_hebergement").val($('#hidden-date-diff').val() * )
 
 					// if($("#inputLogement").val() == "Chambre Porcelaine option chambre"){
 					// 	var price_per_night = 80;
